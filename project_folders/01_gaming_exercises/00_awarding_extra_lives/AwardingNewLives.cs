@@ -28,7 +28,7 @@ class Template {
 
     else
     {
-         Console.WriteLine("You suck.. retry by inputting a number please.");
+         Console.WriteLine("You suck.. retry by inputting a number please." + hearts);
     }
     
   
