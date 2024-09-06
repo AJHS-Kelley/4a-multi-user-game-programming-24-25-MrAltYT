@@ -1,20 +1,40 @@
-// 4A Johnson Traevon, Number Guess, v0.1
+// 4A Johnson Traevon, Number Guess, v1
 using System;
 class GuessNumber {
   static void Main() {
     int numGuess = 0;
-    int maxGuess = 5;
+    int maxGuess = 10;
     int guess;
 
     // Generate the secret number here.
     Random rnd =  new Random(); // Create an object named 'rng' that is a copy of the Random() class.
-    int hehehehaw = rnd.Next(1, 1001); // generate from 1 to 9 (MIN to MAX)
+    int hehehehaw = rnd.Next(1, 1000001); // generate from 1 to 9 (MIN to MAX)
 
     while (numGuess < maxGuess) {
       Console.WriteLine("Please guess a number between 1 through 1000");
       guess = Convert.ToInt32(Console.ReadLine());
-      Console.WriteLine(guess);
+      // Console.WriteLine(guess);
+
       numGuess++;
+      if (guess < hehehehaw)
+      {
+        Console.WriteLine("Your guess is too low");
+      }
+      else if (guess > hehehehaw)
+      {
+        Console.WriteLine("Your guess is too high");
+      }
+      else
+      {
+        Console.WriteLine("Whoa.. waku waku!! You Guessed it");
+        break; // keyword to exit a loop
+      }
+
+      if (numGuess >  10)
+      {
+        Console.WriteLine("You have lost the game.\n please restart");
+      }
+
 
     }
       // Allow the user to guess the number.
