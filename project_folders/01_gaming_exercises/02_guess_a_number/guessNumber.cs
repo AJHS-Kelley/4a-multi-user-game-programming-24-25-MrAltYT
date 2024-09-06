@@ -10,7 +10,7 @@ class GuessNumber {
     Random rnd =  new Random(); // Create an object named 'rng' that is a copy of the Random() class.
     int hehehehaw = rnd.Next(1, 1000001); // generate from 1 to 9 (MIN to MAX)
 
-    while (numGuess < maxGuess) {
+    while (numGuess <= maxGuess) {
       Console.WriteLine("Please guess a number between 1 through 1000");
       guess = Convert.ToInt32(Console.ReadLine());
       // Console.WriteLine(guess);
@@ -32,7 +32,9 @@ class GuessNumber {
 
       if (numGuess >  10)
       {
-        Console.WriteLine("You have lost the game.\n please restart");
+        Console.WriteLine("You have lost the game.\n please restart\n");
+        Console.WriteLine("The Number was...\n");
+        Console.WriteLine(hehehehaw);
       }
 
 
