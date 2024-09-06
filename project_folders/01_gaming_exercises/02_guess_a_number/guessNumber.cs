@@ -32,9 +32,9 @@ class GuessNumber {
 
       if (numGuess >  10)
       {
-        Console.WriteLine("You have lost the game.\n please restart\n");
-        Console.WriteLine("The Number was...\n");
-        Console.WriteLine(hehehehaw);
+        Console.WriteLine("You have lost the game.\n please restart\n Heres the Secret Number...\n" + hehehehaw);
+        
+        
       }
 
 
