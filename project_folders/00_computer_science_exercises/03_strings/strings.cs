@@ -47,7 +47,9 @@ class Template {
      
      // Where is it in my string?
      Console.WriteLine(greeting.IndexOf("y"));
-     
+
+    // string
+
 
 
 
