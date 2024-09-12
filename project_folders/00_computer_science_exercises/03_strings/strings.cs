@@ -3,8 +3,8 @@ using System;
 class Template {
   static void Main() {
     // In C# ALL STRINGS MUST USE DOUBLE-QUOTES " "
-    sting greeting = "Konnichiwa!! ii tenki desu ne?\n";
-    sting goodbye = "Matane!!\n";
+    string greeting = "Konnichiwa!! ii tenki desu ne?\n";
+    string goodbye = "Matane!!\n";
 
     // In C# strings are treated like an OBJECT that has properties and methods
     // Properties -- things that describe the object such as length, values, data type, etc.
@@ -48,7 +48,18 @@ class Template {
      // Where is it in my string?
      Console.WriteLine(greeting.IndexOf("y"));
 
-    // string
+    // finding parts of a string 
+    string fullName = "Ruby Hoshino";
+
+    // What letter?
+    int lastInitial =  fullName.IndexOf("H");
+
+    // Find the substring
+    string lastName = fullName.Substring(lastInitial);
+
+    // print it
+    Console.WriteLine(lastName);
+
 
 
 
