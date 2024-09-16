@@ -1,4 +1,4 @@
-// Johnson T, Rock-Paper-Scissors v0.0
+// Johnson T, Rock-Paper-Scissors v0.1
 using System;
 class Template {
   static void Main() {
