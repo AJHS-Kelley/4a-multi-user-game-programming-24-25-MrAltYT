@@ -6,8 +6,11 @@ class Template {
     // VARIABLES
     bool gameplay =  false;
     string playerName = "";
-    string answer = "";
-
+    string answerTPN = "";
+    int playerScore;
+    int cpuScore;
+    string playerChoice = "";
+    string cpuChoice = "";
 
     // Player Name
     Console.WriteLine("By RUBY-CHAN\n\n\n");
@@ -15,7 +18,7 @@ class Template {
     playerName = (Console.ReadLine());
     Console.WriteLine("Is this YOUR NAME? " + playerName + "? \n\n If True, type yes");
     answer = Console.ReadLine().ToLower();
-    if (answer == "yes")
+    if (answerTPN == "yes")
     {
         gameplay = true;
     }
@@ -23,6 +26,7 @@ class Template {
     {
         Console.WriteLine("You've ran into an error, please restart the game.");
     }
+    
     // Start of Game
 
   }
