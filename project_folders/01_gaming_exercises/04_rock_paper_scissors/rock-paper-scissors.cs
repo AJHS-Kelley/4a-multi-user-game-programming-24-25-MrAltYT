@@ -13,9 +13,9 @@ class Template {
     Console.WriteLine("By RUBY-CHAN\n\n\n");
     Console.WriteLine("Please.. Input.. YOUR NAMEEEE\n");
     playerName = (Console.ReadLine());
-    Console.WriteLine("Is this YOUR NAME? " + playerName + "? \n\n If true, type yes");
-    answer = Console.ReadLine().Uper();
-    if (answer == "YES")
+    Console.WriteLine("Is this YOUR NAME? " + playerName + "? \n\n If True, type yes");
+    answer = Console.ReadLine().ToLower();
+    if (answer == "yes")
     {
         gameplay = true;
     }
