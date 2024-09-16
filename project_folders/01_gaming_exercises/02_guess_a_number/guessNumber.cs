@@ -3,7 +3,7 @@ using System;
 class GuessNumber {
   static void Main() {
     int numGuess = 0;
-    int maxGuess = 10;
+    int maxGuess = 15;
     int guess;
 
     // Generate the secret number here.
@@ -31,7 +31,7 @@ class GuessNumber {
         break; // keyword to exit a loop
       }
 
-      if (numGuess >=  10)
+      if (numGuess >=  15)
       {
         Console.WriteLine("You have lost the game.\n please restart\n The Secret Number is...\n" + hehehehaw);
         
