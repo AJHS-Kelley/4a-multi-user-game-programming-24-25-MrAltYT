@@ -11,11 +11,12 @@ class GuessNumber {
     int hehehehaw = rnd.Next(1, 1000001); // generate from 1 to 9 (MIN to MAX)
 
     while (numGuess <= maxGuess) {
-      Console.WriteLine("Please guess a number between 1 through 1000");
+      Console.WriteLine("Please guess a number between 1 through 1000000\n");
       guess = Convert.ToInt32(Console.ReadLine());
       // Console.WriteLine(guess);
 
       numGuess++;
+      Console.WriteLine("you have " + (maxGuess - numGuess) + " guesses Remaining.");
       if (guess < hehehehaw)
       {
         Console.WriteLine("Your guess is too low");
@@ -30,7 +31,7 @@ class GuessNumber {
         break; // keyword to exit a loop
       }
 
-      if (numGuess >  10)
+      if (numGuess >=  10)
       {
         Console.WriteLine("You have lost the game.\n please restart\n The Secret Number is...\n" + hehehehaw);
         
