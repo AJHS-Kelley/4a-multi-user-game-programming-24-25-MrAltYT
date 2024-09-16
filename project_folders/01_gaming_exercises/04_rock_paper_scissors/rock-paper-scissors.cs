@@ -17,7 +17,7 @@ class Template {
     Console.WriteLine("Please.. Input.. YOUR NAMEEEE\n");
     playerName = (Console.ReadLine());
     Console.WriteLine("Is this YOUR NAME? " + playerName + "? \n\n If True, type yes");
-    answer = Console.ReadLine().ToLower();
+    answerTPN = Console.ReadLine().ToLower();
     if (answerTPN == "yes")
     {
         gameplay = true;
@@ -26,7 +26,7 @@ class Template {
     {
         Console.WriteLine("You've ran into an error, please restart the game.");
     }
-    
+
     // Start of Game
 
   }
