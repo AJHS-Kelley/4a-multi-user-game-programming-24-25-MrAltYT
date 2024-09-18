@@ -15,9 +15,9 @@ class Template {
     // Player Name
 
     Console.WriteLine("By ❤️ ⭐ RUBY-CHAN⭐ ❤️\n\n\n");
-    Console.WriteLine("Please.. Input.. YOUR NAMEEEE\n");
+    Console.WriteLine("Please.. Input.. your NAME, then press Enter\n");
     playerName = (Console.ReadLine());
-    Console.WriteLine("Is this YOUR NAME? " + playerName + "? \n\n If True, type yes");
+    Console.WriteLine("Is this YOUR NAME? " + playerName + "? \n\n If True, type yes\n\n");
     testPlayer = Console.ReadLine().ToLower();
     if (testPlayer == "yes")
     {
