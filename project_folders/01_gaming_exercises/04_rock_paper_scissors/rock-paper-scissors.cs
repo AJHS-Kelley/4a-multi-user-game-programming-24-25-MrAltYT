@@ -1,4 +1,4 @@
-// Johnson T, Rock-Paper-Scissors v0.1
+// Johnson T, Rock-Paper-Scissors v0.4
 using System;
 class Template {
   static void Main() {
@@ -7,8 +7,8 @@ class Template {
     bool gameplay =  false;
     string playerName = "";
     string testPlayer = "";
-    int playerScore;
-    int cpuScore;
+    int playerScore = 0;
+    int cpuScore = 0;
     string playerChoice = "";
     string cpuChoice = "";
 
@@ -29,10 +29,36 @@ class Template {
     }
 
     // Rules of Game
+    Console.WriteLine("Ruby - Welcome to Rock, Paper, Scissors. My name is Ruby, and I will be your opponet! \n" + playerName);
+    Console.WriteLine("Ruby - Rock beats Scissors, Scissors beats Paper, and Paper beats Rock\n");
+    Console.WriteLine("Ruby - The winner scores a point. If each player picks the same no points are awarded\n");
+    Console.WriteLine("Ruby - The first player to five points wins.\n");
+    Console.WriteLine("Ruby - Have FUNNN");
+    
+    // Start Of Game
 
-    Console.WriteLine("Rock beats Scissors, Scissors beats Paper, and Paper beats Rock\n");
-    Console.WriteLine("The winner scores a point. If each player picks the same no points are awarded\n");
-    Console.WriteLine("The first player to five points wins.\n");
+    while (playerScore <= 5)
+    {
+      Console.WriteLine("Ruby - Choose between Rock, Paper, and Scissors\n");
+
+      playerChoice = Console.ReadLine().ToLower();
+
+      if (playerChoice == "rock")
+      {
+        Console.WriteLine("Your Choice is Rock\n");
+      }
+      if (playerChoice == "paper")
+      {
+        Console.WriteLine("Your Choice is paper\n");
+      }
+      if (playerChoice == "scissors")
+      {
+        Console.WriteLine("Your Choice is scissors\n");
+      }
+      
+      Console.WriteLine("Ruby Choose.. " + cpuChoice);
+      
+    }
 
 
   }
