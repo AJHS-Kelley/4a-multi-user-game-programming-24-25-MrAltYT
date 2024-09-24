@@ -1,4 +1,4 @@
-// Johnson T, Rock-Paper-Scissors v0.6
+// Johnson T, Rock-Paper-Scissors v0.9
 using System;
 class RPS {
   static void Main() {
@@ -11,8 +11,8 @@ class RPS {
     int cpuScore = 0;
     string playerChoice = "";
     string rubyChoice = "";
-    Random rnd = new Random();
-    int rubyRand = rnd.Next(0, 2);
+    
+    
 
     // Player Name
 
@@ -41,6 +41,8 @@ class RPS {
 
     while (playerScore <= 5 || cpuScore <= 5)
     {
+      
+      
       Console.WriteLine("Ruby - Choose between Rock, Paper, or Scissors\n");
 
       playerChoice = Console.ReadLine().ToLower();
@@ -59,6 +61,8 @@ class RPS {
       }
 
       // CPU CHOICE 
+      Random rnd = new Random();
+      int rubyRand = rnd.Next(0, 3);
       if (rubyRand == 0)
       {
         rubyChoice = "rock";
@@ -78,11 +82,64 @@ class RPS {
       Console.WriteLine("Ruby: I Choose---" + rubyChoice + "\n");
       
       // Who Wins??
-
+      // ROCK
       if (playerChoice == "rock" && rubyChoice == "paper")
       {
-        Console.WriteLine
+        Console.WriteLine("Ruby: Ha!! I WIN (BLEH)\n\n");
+        cpuScore++;
+        Console.WriteLine("Ruby: Your score is " + playerScore + " And mine is " + cpuScore + "\n");
       }
+      else if (playerChoice == "rock" && rubyChoice == "scissors")
+      {
+        Console.WriteLine("Ruby: HuH!?\n\n");
+        playerScore++;
+        Console.WriteLine("Ruby: Your score is " + playerScore + " And mine is " + cpuScore + "\n");
+      }
+      else if (playerChoice == "rock" && rubyChoice == "rock")
+      {
+        Console.WriteLine("Ruby: Seems I met my match >:c\n\n");
+        Console.WriteLine("Ruby: Your score is " + playerScore + " And mine is " + cpuScore + "\n");
+      }
+
+
+      // PAPER
+      if (playerChoice == "paper" && rubyChoice == "scissors")
+      {
+        Console.WriteLine("Ruby: Ha!! I WIN (BLEH)\n\n");
+        cpuScore++;
+        Console.WriteLine("Ruby: Your score is " + playerScore + " And mine is " + cpuScore + "\n");
+      }
+      else if (playerChoice == "paper" && rubyChoice == "rock")
+      {
+        Console.WriteLine("Ruby: HuH!?\n\n");
+        playerScore++;
+        Console.WriteLine("Ruby: Your score is " + playerScore + " And mine is " + cpuScore + "\n");
+      }
+      else if (playerChoice == "paper" && rubyChoice == "paper")
+      {
+        Console.WriteLine("Ruby: Seems I met my match >:c\n\n");
+        Console.WriteLine("Ruby: Your score is " + playerScore + " And mine is " + cpuScore + "\n");
+      }
+
+      // SCISSORS
+      if (playerChoice == "scissors" && rubyChoice == "rock")
+      {
+        Console.WriteLine("Ruby: Ha!! I WIN (BLEH)\n\n");
+        cpuScore++;
+        Console.WriteLine("Ruby: Your score is " + playerScore + " And mine is " + cpuScore + "\n");
+      }
+      else if (playerChoice == "scissors" && rubyChoice == "paper")
+      {
+        Console.WriteLine("Ruby: HuH!?\n\n");
+        playerScore++;
+        Console.WriteLine("Ruby: Your score is " + playerScore + " And mine is " + cpuScore + "\n");
+      }
+      else if (playerChoice == "scissors" && rubyChoice == "scissors")
+      {
+        Console.WriteLine("Ruby: Seems I met my match >:c\n\n");
+        Console.WriteLine("Ruby: Your score is " + playerScore + " And mine is " + cpuScore + "\n");
+      }
+
     }
 
 
