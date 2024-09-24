@@ -37,9 +37,9 @@ class Template {
     
     // Start Of Game
 
-    while (playerScore <= 5)
+    while (playerScore || cpuScore <= 5)
     {
-      Console.WriteLine("Ruby - Choose between Rock, Paper, and Scissors\n");
+      Console.WriteLine("Ruby - Choose between Rock, Paper, aor Scissors\n");
 
       playerChoice = Console.ReadLine().ToLower();
 
