@@ -1,6 +1,6 @@
-// Johnson T, Rock-Paper-Scissors v0.4
+// Johnson T, Rock-Paper-Scissors v0.6
 using System;
-class Template {
+class RPS {
   static void Main() {
 
     // VARIABLES
@@ -11,6 +11,8 @@ class Template {
     int cpuScore = 0;
     string playerChoice = "";
     string cpuChoice = "";
+    Random rnd = new Random();
+    int cpuRand = rnd.Next(0, 2);
 
     // Player Name
 
@@ -29,7 +31,7 @@ class Template {
     }
 
     // Rules of Game
-    Console.WriteLine("Ruby - Welcome to Rock, Paper, Scissors. My name is Ruby, and I will be your opponet! \n" + playerName);
+    Console.WriteLine("Ruby - Welcome to Rock, Paper, Scissors. My name is Ruby, and I will be your opponet! \n" + playerName + "\n");
     Console.WriteLine("Ruby - Rock beats Scissors, Scissors beats Paper, and Paper beats Rock\n");
     Console.WriteLine("Ruby - The winner scores a point. If each player picks the same no points are awarded\n");
     Console.WriteLine("Ruby - The first player to five points wins.\n");
@@ -37,26 +39,43 @@ class Template {
     
     // Start Of Game
 
-    while (playerScore || cpuScore <= 5)
+    while (playerScore <= 5 || cpuScore <= 5)
     {
-      Console.WriteLine("Ruby - Choose between Rock, Paper, aor Scissors\n");
+      Console.WriteLine("Ruby - Choose between Rock, Paper, or Scissors\n");
 
       playerChoice = Console.ReadLine().ToLower();
 
       if (playerChoice == "rock")
       {
-        Console.WriteLine("Your Choice is Rock\n");
+        Console.WriteLine("Ruby: Your Choice is Rock\n");
       }
       if (playerChoice == "paper")
       {
-        Console.WriteLine("Your Choice is paper\n");
+        Console.WriteLine("Ruby: Your Choice is paper\n");
       }
       if (playerChoice == "scissors")
       {
-        Console.WriteLine("Your Choice is scissors\n");
+        Console.WriteLine("Ruby: Your Choice is scissors\n");
       }
-      
-      Console.WriteLine("Ruby Choose.. " + cpuChoice);
+
+      // CPU CHOICE 
+      if (cpuRand == 0)
+      {
+        cpuChoice = "rock";
+      }
+      else if (cpuRand == 1)
+      {
+        cpuChoice = "paper";
+      }
+      else if (cpuRand == 2)
+      {
+        cpuChoice = "scissors";
+      }
+      else
+      {
+        Console.WriteLine("Ruby: L\n");
+      }
+      Console.WriteLine("Ruby Chooses.. " + cpuChoice + "\n");
       
     }
 
