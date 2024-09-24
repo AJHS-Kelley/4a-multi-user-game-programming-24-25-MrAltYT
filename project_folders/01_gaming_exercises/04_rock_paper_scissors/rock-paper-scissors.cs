@@ -10,9 +10,9 @@ class RPS {
     int playerScore = 0;
     int cpuScore = 0;
     string playerChoice = "";
-    string cpuChoice = "";
+    string rubyChoice = "";
     Random rnd = new Random();
-    int cpuRand = rnd.Next(0, 2);
+    int rubyRand = rnd.Next(0, 2);
 
     // Player Name
 
@@ -59,24 +59,30 @@ class RPS {
       }
 
       // CPU CHOICE 
-      if (cpuRand == 0)
+      if (rubyRand == 0)
       {
-        cpuChoice = "rock";
+        rubyChoice = "rock";
       }
-      else if (cpuRand == 1)
+      else if (rubyRand == 1)
       {
-        cpuChoice = "paper";
+        rubyChoice = "paper";
       }
-      else if (cpuRand == 2)
+      else if (rubyRand == 2)
       {
-        cpuChoice = "scissors";
+        rubyChoice = "scissors";
       }
       else
       {
         Console.WriteLine("Ruby: L\n");
       }
-      Console.WriteLine("Ruby Chooses.. " + cpuChoice + "\n");
+      Console.WriteLine("Ruby: I Choose---" + rubyChoice + "\n");
       
+      // Who Wins??
+
+      if (playerChoice == "rock" && rubyChoice == "paper")
+      {
+        Console.WriteLine
+      }
     }
 
 
