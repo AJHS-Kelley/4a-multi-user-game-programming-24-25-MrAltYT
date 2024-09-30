@@ -39,7 +39,7 @@ class RPS {
     
     // Start Of Game
 
-    while (playerScore <= 5 || cpuScore <= 5)
+    while (playerScore < 5 && cpuScore < 5)
     {
       
       

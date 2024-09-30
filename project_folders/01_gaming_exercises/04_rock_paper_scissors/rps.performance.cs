@@ -14,28 +14,10 @@ class RPS {
     
     
 
-    // Player Name
+    // Testing Game LOOP
+    int loopcount = 0;
+    int loopreqs = 0;
 
-    Console.WriteLine("By ❤️ ⭐ RUBY-CHAN⭐ ❤️\n\n\n");
-    Console.WriteLine("Please.. Input.. your NAME, then press Enter\n");
-    playerName = (Console.ReadLine());
-    Console.WriteLine("Is this YOUR NAME? " + playerName + "? \n\n If True, type yes\n\n");
-    testPlayer = Console.ReadLine().ToLower();
-    if (testPlayer == "yes")
-    {
-        gameplay = true;
-    }
-    else 
-    {
-        Console.WriteLine("You've ran into an error, please restart the game.\n");
-    }
-
-    // Rules of Game
-    Console.WriteLine("Ruby - Welcome to Rock, Paper, Scissors. My name is Ruby, and I will be your opponet! \n" + playerName + "\n");
-    Console.WriteLine("Ruby - Rock beats Scissors, Scissors beats Paper, and Paper beats Rock\n");
-    Console.WriteLine("Ruby - The winner scores a point. If each player picks the same no points are awarded\n");
-    Console.WriteLine("Ruby - The first player to five points wins.\n");
-    Console.WriteLine("Ruby - Have FUNNN");
     
     // Start Of Game
 
