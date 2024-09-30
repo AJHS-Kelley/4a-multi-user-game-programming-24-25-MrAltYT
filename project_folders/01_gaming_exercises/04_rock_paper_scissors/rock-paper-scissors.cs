@@ -1,4 +1,4 @@
-// Johnson T, Rock-Paper-Scissors v1
+// Johnson T, Rock-Paper-Scissors v1.1
 using System;
 class RPS {
   static void Main() {
@@ -139,13 +139,13 @@ class RPS {
         Console.WriteLine("Ruby: Seems I met my match >:c\n\n");
         Console.WriteLine("Ruby: Your score is " + playerScore + " And mine is " + cpuScore + "\n");
       }
-        break
+        
       
-      if (playerScore <= 5)
+      if (playerScore == 5)
       {
-        Console.Write("Ruby: You Win!! Congrats!!\n");
+        Console.WriteLine("Ruby: You Win!! Congrats!!\n");
       }
-      if (cpuScore <= 5)
+      if (cpuScore == 5)
       {
         Console.WriteLine("Ruby: Blehh I win *sticks out tongue*\n");
       }
