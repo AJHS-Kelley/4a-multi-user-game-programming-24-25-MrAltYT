@@ -22,10 +22,11 @@ class RPS {
     
     // Start Of Game
 
+    Random rnd = new Random();
     while (loopCount < loopreqs)
     {
       // CPU CHOICE 
-      Random rnd = new Random();
+      
       int rubyRand = rnd.Next(0, 3);
       if (rubyRand == 0)
       {
@@ -125,7 +126,7 @@ class RPS {
       
 
     }
-    //Console.WriteLine("draws: " + numDraws);
+    Console.WriteLine("draws: " + numDraws);
 
   }
 }

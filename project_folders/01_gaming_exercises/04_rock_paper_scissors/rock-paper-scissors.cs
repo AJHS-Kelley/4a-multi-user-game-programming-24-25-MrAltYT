@@ -85,13 +85,13 @@ class RPS {
       // ROCK
       if (playerChoice == "rock" && rubyChoice == "paper")
       {
-        Console.WriteLine("Ruby: Ha!! I WIN (BLEH)\n\n");
+        Console.WriteLine("Ruby: keep on tryin! \n\n");
         cpuScore++;
         Console.WriteLine("Ruby: Your score is " + playerScore + " And mine is " + cpuScore + "\n");
       }
       else if (playerChoice == "rock" && rubyChoice == "scissors")
       {
-        Console.WriteLine("Ruby: HuH!?\n\n");
+        Console.WriteLine("Ruby: BAH!? \n\n");
         playerScore++;
         Console.WriteLine("Ruby: Your score is " + playerScore + " And mine is " + cpuScore + "\n");
       }
