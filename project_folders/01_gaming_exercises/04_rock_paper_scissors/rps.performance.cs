@@ -43,7 +43,7 @@ class RPS {
       {
         Console.WriteLine(" L\n");
       }
-      Console.WriteLine(" I Choose---" + rubyChoice + "\n");
+      //Console.WriteLine(" I Choose---" + rubyChoice + "\n");
 
 
         // CPU CHOICE 
@@ -65,7 +65,7 @@ class RPS {
         Console.WriteLine(" L\n");
       }
 
-      Console.WriteLine(" I Choose---" + rubyChoice + "\n");
+      //Console.WriteLine(" I Choose---" + rubyChoice + "\n");
       
       // Who Wins??
       // ROCK
@@ -125,7 +125,7 @@ class RPS {
       
 
     }
-    Console.WriteLine("draws: " + numDraws);
+    //Console.WriteLine("draws: " + numDraws);
 
   }
 }

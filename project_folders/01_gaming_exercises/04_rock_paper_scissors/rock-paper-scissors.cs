@@ -97,7 +97,7 @@ class RPS {
       }
       else if (playerChoice == "rock" && rubyChoice == "rock")
       {
-        Console.WriteLine("Ruby: Seems I met my match >:c\n\n");
+        Console.WriteLine("Ruby: You cant beat me LOL\n\n");
         Console.WriteLine("Ruby: Your score is " + playerScore + " And mine is " + cpuScore + "\n");
       }
 
@@ -124,19 +124,19 @@ class RPS {
       // SCISSORS
       if (playerChoice == "scissors" && rubyChoice == "rock")
       {
-        Console.WriteLine("Ruby: Ha!! I WIN (BLEH)\n\n");
+        Console.WriteLine("Ruby: hehe \n\n");
         cpuScore++;
         Console.WriteLine("Ruby: Your score is " + playerScore + " And mine is " + cpuScore + "\n");
       }
       else if (playerChoice == "scissors" && rubyChoice == "paper")
       {
-        Console.WriteLine("Ruby: HuH!?\n\n");
+        Console.WriteLine("Ruby: *Spits at you*\n\n");
         playerScore++;
         Console.WriteLine("Ruby: Your score is " + playerScore + " And mine is " + cpuScore + "\n");
       }
       else if (playerChoice == "scissors" && rubyChoice == "scissors")
       {
-        Console.WriteLine("Ruby: Seems I met my match >:c\n\n");
+        Console.WriteLine("Ruby: BLEH! \n\n");
         Console.WriteLine("Ruby: Your score is " + playerScore + " And mine is " + cpuScore + "\n");
       }
         
