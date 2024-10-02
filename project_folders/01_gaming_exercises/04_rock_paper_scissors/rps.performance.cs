@@ -1,4 +1,4 @@
-// Johnson T, Rock-Paper-Scissors v0.9
+// Johnson T, Rock-Paper-Scissors PERFORMANCE v1
 using System;
 class RPS {
   static void Main() {
