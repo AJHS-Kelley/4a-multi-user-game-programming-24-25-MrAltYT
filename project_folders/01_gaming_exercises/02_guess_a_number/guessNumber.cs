@@ -1,4 +1,4 @@
-// 4A Johnson Traevon, Number Guess, v1
+// 4A Johnson Traevon, Number Guess, v1.1
 using System;
 class GuessNumber {
   static void Main() {
@@ -11,7 +11,7 @@ class GuessNumber {
     int hehehehaw = rnd.Next(1, 1000001); // generate from 1 to 9 (MIN to MAX)
 
     while (numGuess <= maxGuess) {
-      Console.WriteLine("Please guess a number between 1 through 1000000\n");
+      Console.WriteLine("Ruby: Please guess a number between 1 through 1000000 XD\n");
       guess = Convert.ToInt32(Console.ReadLine());
       // Console.WriteLine(guess);
 
@@ -19,21 +19,21 @@ class GuessNumber {
       Console.WriteLine("you have " + (maxGuess - numGuess) + " guesses Remaining.");
       if (guess < hehehehaw)
       {
-        Console.WriteLine("Your guess is too low");
+        Console.WriteLine("Ruby: Your guess is too low");
       }
       else if (guess > hehehehaw)
       {
-        Console.WriteLine("Your guess is too high");
+        Console.WriteLine("Ruby: Your guess is too high");
       }
       else
       {
-        Console.WriteLine("Whoa.. waku waku!! You Guessed it");
+        Console.WriteLine("Ruby: Whoa.. waku waku!! You Guessed it");
         break; // keyword to exit a loop
       }
 
       if (numGuess >=  15)
       {
-        Console.WriteLine("You have lost the game.\n please restart\n The Secret Number is...\n" + hehehehaw);
+        Console.WriteLine("Ruby: You have lost the game.\n please restart\n The Secret Number is...\n" + hehehehaw);
         
         
       }
