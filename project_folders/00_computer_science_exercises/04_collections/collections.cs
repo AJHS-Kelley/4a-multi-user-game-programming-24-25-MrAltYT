@@ -1,4 +1,4 @@
-// Youkosou to my collections for C#, made by Johnson T v0.2
+// Youkosou to my collections for C#, made by Johnson T v0.3
 using System;
 using System.Linq;
 using System.Collections;
@@ -37,6 +37,11 @@ class Collections {
 
     Console.WriteLine("Ruby: Here's your gpa these fine semesters: \n" + String.Join("\n ", GPA));
     Console.WriteLine();
+
+    // How long is my array? Deteremining Array Length
+    Console.WriteLine("The length of the breakfastfoods array is: " + breakfastFoods.Length);
+    // .Length is known as a property of the array
+
   
   } // DO NOT DELETE EVER, SHOULD BE 3 SPACES INDENTED
 } //  DO NOT DELETE EVER, ALWAYS TOUCHING LEFT MARGIN
