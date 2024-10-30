@@ -1,4 +1,4 @@
-// Youkosou to my collections for C#, made by Johnson T v0.3
+// Youkosou to my collections for C#, made by Johnson T v0.4
 using System;
 using System.Linq;
 using System.Collections;
@@ -42,6 +42,11 @@ class Collections {
     Console.WriteLine("The length of the breakfastfoods array is: " + breakfastFoods.Length);
     // .Length is known as a property of the array
 
-  
+    // Accessing elements in the array with the index.
+    Console.WriteLine("The first element in breakfastFoods is: " + breakfastFoods[0]);
+    // Print the 2nd Element of the testscores and 3rd if the Gpa
+    Console.WriteLine("The second element in test scores is: " + testScores[1]);
+    Console.WriteLine("The third element in gpa is: " + GPA[2]);
+
   } // DO NOT DELETE EVER, SHOULD BE 3 SPACES INDENTED
 } //  DO NOT DELETE EVER, ALWAYS TOUCHING LEFT MARGIN
