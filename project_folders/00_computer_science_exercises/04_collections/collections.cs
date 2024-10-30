@@ -24,8 +24,19 @@ class Collections {
 
     // Print Array Contents -- All Elements on Single Line
     Console.WriteLine("Ruby: The Elements of each array are:\n");
+
     Console.WriteLine("Ruby: Here's your breakfastFoods: \n" + String.Join(", ", breakfastFoods));
     Console.WriteLine(); // Prints an empty line to the screen
+
+    Console.WriteLine("Ruby: Here's your recent test scores: \n" + String.Join(", ", testScores));
+    Console.WriteLine();
+
+    // Print Array Contents -- on seperate Lines
+    Console.WriteLine("Ruby: Here's your breakfastFoods: \n" + String.Join("\n ", breakfastFoods));
+    Console.WriteLine(); // Prints an empty line to the screen
+
+    Console.WriteLine("Ruby: Here's your gpa these fine semesters: \n" + String.Join("\n ", GPA));
+    Console.WriteLine();
   
   } // DO NOT DELETE EVER, SHOULD BE 3 SPACES INDENTED
 } //  DO NOT DELETE EVER, ALWAYS TOUCHING LEFT MARGIN
