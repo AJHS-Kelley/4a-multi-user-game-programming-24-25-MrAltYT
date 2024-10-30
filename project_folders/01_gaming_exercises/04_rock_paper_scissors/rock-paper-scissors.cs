@@ -23,6 +23,10 @@ class RPS {
         {
           Console.WriteLine("Ruby: Haii big bro!!\n");
         }
+    else if (playerName == "kana")
+        {
+          Console.WriteLine("Ruby: sissy has joined the chat\n");
+        }
     Console.WriteLine("Is this YOUR NAME? " + playerName + "? \n\n If True, type yes\n\n");
     testPlayer = Console.ReadLine().ToLower();
     if (testPlayer == "yes")
