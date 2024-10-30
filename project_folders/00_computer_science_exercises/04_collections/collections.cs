@@ -1,7 +1,7 @@
 // Youkosou to my collections for C#, made by Johnson T v0.2
 using System;
 using System.Linq;
-using System.collections;
+using System.Collections;
 
 
 class Collections {
@@ -23,8 +23,8 @@ class Collections {
     double[] GPA = {0.13D, 1.8D, 2.0D, 3.0D, 60.4D};
 
     // Print Array Contents -- All Elements on Single Line
-    Console.WriteLine("The Elements of each array are:\n");
-    Console.WriteLine("breakfastFoods: \n" + String.Join(", ", breakfastFoods));
+    Console.WriteLine("Ruby: The Elements of each array are:\n");
+    Console.WriteLine("Ruby: Here's your breakfastFoods: \n" + String.Join(", ", breakfastFoods));
     Console.WriteLine(); // Prints an empty line to the screen
   
   } // DO NOT DELETE EVER, SHOULD BE 3 SPACES INDENTED
