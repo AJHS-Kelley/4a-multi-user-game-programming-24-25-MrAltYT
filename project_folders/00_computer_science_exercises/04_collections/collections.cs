@@ -18,7 +18,7 @@ class Collections {
     -- First element in Index is 0
     */
 
-    // Declaring and Defining an ARRAY
+    // Declaring and Definingan ARRAY
     // string[] breakfastFoods = {"Pancake", "Bacon", "Fruit Loops", "muffin", "grammies"};
     // int[] testScores = {-35, 25, 53, 72, 100};
     // double[] GPA = {0.13D, 1.8D, 2.0D, 3.0D, 60.4D};
@@ -31,7 +31,7 @@ class Collections {
 
     // Console.WriteLine("Ruby: Here's your recent test scores: \n" + String.Join(", ", testScores));
     // Console.WriteLine();
-
+ 
     // // Print Array Contents -- on seperate Lines
     // Console.WriteLine("Ruby: Here's your breakfastFoods: \n" + String.Join("\n ", breakfastFoods));
     // Console.WriteLine(); // Prints an empty line to the screen
@@ -106,7 +106,7 @@ class Collections {
       "Star", "Barrier", "supreme light", "the cocktail", "plushie", "key"
     };
 
-    Console.WriteLine(playerInv.Contains("lightstick"));
+    Console.WriteLine("Ruby: " + playerInv.Contains("lightstick"));
     Console.WriteLine(playerInv.Contains("Star"));
 
     if (playerInv.Contains("Star"))
