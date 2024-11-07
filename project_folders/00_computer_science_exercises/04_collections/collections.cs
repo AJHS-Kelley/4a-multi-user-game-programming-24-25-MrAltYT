@@ -73,6 +73,15 @@ class Collections {
       // exampleArrList.Insert(4, "I love stars");
       // exampleArrList2.Insert(3, "aww");
 
+      // .Remove(value) removes the first occurence of the item from the array list.
+      var newList = new ArrayList()
+      {
+        -10, 20, 35, 66, 23, 79, -10, -60, -60
+      };
+    Console.WriteLine(newList[0]);
+    newList.Remove(-10);
+    Console.WriteLine(newList[0]);
+
 
   } // DO NOT DELETE EVER, SHOULD BE 3 SPACES INDENTED
 } //  DO NOT DELETE EVER, ALWAYS TOUCHING LEFT MARGIN
