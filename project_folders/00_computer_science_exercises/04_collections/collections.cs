@@ -1,4 +1,4 @@
-// Youkosou to my collections for C#, made by Johnson T v0.5
+// Youkosou to my collections for C#, made by Johnson T v0.6
 using System;
 using System.Linq;
 using System.Collections;
@@ -6,7 +6,7 @@ using System.Collections;
 
 class Collections {
   static void Main() {
-
+    bool allMobsHostile = false;
     /*
     In C#, Collection is known as an ARRAY
 
@@ -78,9 +78,42 @@ class Collections {
       {
         -10, 20, 35, 66, 23, 79, -10, -60, -60
       };
-    Console.WriteLine(newList[0]);
-    newList.Remove(-10);
-    Console.WriteLine(newList[0]);
+    // Console.WriteLine(newList[0]);
+    // newList.Remove(-10);
+    // Console.WriteLine(newList[0]);
+    
+    // // Deleting based off index number
+    // // .RemoveAt(value) -- > deletes the item at the specific index
+    // newList.RemoveAt(3);
+
+    // // deleting the first item
+    // newList.RemoveAt(0);
+
+    // // delete the last itme
+    // newList.RemoveAt(newList.Length - 1);
+
+    // // Remove an entire range of elements.
+    // // .RemoveRange(first index, last index)
+    // newList.RemoveRange(3, 8)
+
+    // // shortcut to delete from  one item through the end of a list
+    // newList.RemoveRange(4, newList.Length - 1);
+
+    // Does the ArrayList contain a certain value
+    // .Contains (value) returns true if the list has that value, false otherwise
+    var playerInv = new ArrayList()
+    {
+      "Star", "Barrier", "supreme light", "the cocktail", "plushie", "key"
+    };
+
+    Console.WriteLine(playerInv.Contains("lightstick"));
+    Console.WriteLine(playerInv.Contains("Star"));
+
+    if (playerInv.Contains("Star"))
+    {
+      allMobsHostile = true;
+    }
+
 
 
   } // DO NOT DELETE EVER, SHOULD BE 3 SPACES INDENTED
